@@ -1,6 +1,6 @@
 {
   "name": "@rezafaizarahman/asset-resizer",
-  "version": "2.1.0",
+  "version": "2.2.0",
   "description": "a simple commandline asset generator for iOS and Android",
   "dependencies": {
     "commander": "^2.11.0",
