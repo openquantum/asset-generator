@@ -1,17 +1,24 @@
 {
-  "name": "@rezafaizarahman/asset-resizer",
-  "version": "2.2.0",
+  "name": "@openquantum/asset-generator",
+  "version": "2.5.0",
   "description": "a simple commandline asset generator for iOS and Android",
   "dependencies": {
-    "commander": "^2.11.0",
-    "fs-extra": "^4.0.2",
-    "glob": "^7.1.2",
-    "jimp": "^0.2.28"
+    "commander": "^8.1.0",
+    "fs-extra": "^10.0.0",
+    "glob": "^7.1.7",
+    "jimp": "^0.16.1"
   },
-  "devDependencies": {},
+  "devDependencies": {
+    "eslint": "^7.32.0",
+    "eslint-config-prettier": "^8.3.0",
+    "eslint-plugin-import": "^2.24.0",
+    "eslint-plugin-prettier": "^3.4.0",
+    "prettier": "^2.3.2"
+  },
   "bin": {
     "asset-generator": "./index.js"
   },
+  "main": "app.js",
   "author": "Tobias Zeising <tobias.zeising@aditu.de> (http://www.aditu.de)",
   "license": "MIT",
   "repository": "github:ssilence/asset-generator"
