@@ -1,14 +1,19 @@
 #! /usr/bin/env node
-const program = require("commander");
-const generate = require("./generate.js");
 
-console.log("asset-generator; use --help for options");
+const { program } = require('commander')
+const generate = require('./generate.js')
+const { version } = require('./package.json')
+
+console.log('asset-generator; use --help for options')
 
 program
-  .version(process.env.npm_package_version)
-  .usage("[options] <file ...>")
-  .option("-a, --android [path]", "android path")
-  .option("-i, --ios [path]", "iOS Path")
-  .parse(process.argv);
+  .version(version)
+  .argument('<files...>', 'file/s to convert')
+  .option('-a, --android [path]', 'android path')
+  .option('-i, --ios [path]', 'iOS Path')
 
-generate(program.args, program.android, program.ios);
+program.parse()
+
+const options = program.opts()
+
+generate(program.args, options.android, options.ios)

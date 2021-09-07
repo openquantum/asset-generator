@@ -21,7 +21,7 @@ android or ios option is optional. Only use --android if you need only android a
 
 example:
 ```
-asset-generator *.png --android /my-android-project/app/src/main/res --ios /my-ios-project/app/assets
+asset-generator *.png --android ./my-android-project/app/src/main/res --ios ./my-ios-project/app/assets
 ```
 
 ---
