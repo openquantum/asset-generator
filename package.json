@@ -19,6 +19,7 @@
     "asset-generator": "./index.js"
   },
   "main": "app.js",
+  "private": false,
   "author": "Tobias Zeising <tobias.zeising@aditu.de> (http://www.aditu.de)",
   "license": "MIT",
   "repository": "github:ssilence/asset-generator"
